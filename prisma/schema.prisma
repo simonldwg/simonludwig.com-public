@@ -1,0 +1,27 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+  previewFeatures = ["driverAdapters"]
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// This is the model for a project in the portfolio. It is the only model that is currently necessary for my website.
+model Project {
+  slug        String  @id
+  title       String  @unique
+  subtitle    String?
+  category    String  // Note: The table creation SQL statement has a CHECK constraint added for this field which only
+                      // allows the values "Personal", "University" and "Work". This app is designed to use Cloudflare's
+                      // D1 database which does not support enums. Otherwise, enums would have been a better choice.
+  description String
+  githubURL   String?
+  imageSmall  String
+  imageLarge  String
+}
+
