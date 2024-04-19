@@ -1,3 +1,10 @@
+import './globals.css'
+
+export const metadata = {
+    title: 'Simon Ludwig',
+    description: '',
+}
+
 export default function RootLayout({
   children,
 }: {
