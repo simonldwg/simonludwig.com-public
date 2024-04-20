@@ -31,7 +31,7 @@ const Home = async () => {
       <div className="bg-gray-950 text-gray-50">
         <div className="max-w-screen-2xl mx-auto w-full p-4 pt-10 pb-10">
           <Heading1 colorClass="text-gray-50">Projects</Heading1>
-          <p className="mb-10">These are some of the projects I have worked on recently.</p>
+          <p className="mb-10">These are some of the projects I have worked on recently. Some of the projects were done in a team.</p>
           <div className="lg:grid lg:grid-cols-2 lg:gap-16">
             <div>
               <Heading2 colorClass="text-gray-50">Work Projects</Heading2>
@@ -39,7 +39,6 @@ const Home = async () => {
                 {
                   projects.filter((project) => project.category === 'Work').map((project) => ProjectPreview(project))
                 }
-                <ProjectPreview slug="asd" title="asd" subtitle="asd" category="" description="" githubURL="" imageSmall="https://static.simonludwig.com/images/projects/anwaltskanzlei-ludwig_sm.png" imageLarge="" />
               </div>
             </div>
             <div>
