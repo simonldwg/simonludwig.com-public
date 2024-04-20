@@ -14,7 +14,7 @@ const Home = async () => {
       <div className="max-w-screen-2xl mx-auto w-full grid grid-cols-1 md:grid-cols-2">
         <div className="w-full h-full flex p-4 pt-10 pb-10 md:pb-4 md:pt-4 md:pr-2 order-2 md:order-1 items-center">
           <div>
-            <h1 className="font-mono font-black text-primary text-8xl md:text-9xl mb-4">Hi.</h1>
+            <h1 className="font-mono font-bold md:font-black text-primary text-8xl md:text-9xl mb-4">Hi.</h1>
             <p className="text-title text-xl mb-4">My name is Simon Ludwig. I study Media Informatics at the University of Applied Sciences in Düsseldorf.</p>
             <p className="text-title text-xl mb-6">I am passionate about software engineering methodology, software architecture, security engineering and music software.</p>
             <a className="p-2 font-bold rounded-xl border-2 border-title text-title hover:bg-title hover:text-light no-underline inline-block transition-all duration-200 ease-out" href="mailto:hello@simonludwig.com">
