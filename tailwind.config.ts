@@ -8,6 +8,9 @@ if (process.env.CUSTOM_SANS_FONT) {
 if (process.env.CUSTOM_MONO_FONT) {
   fontFamilyConfig.mono = process.env.CUSTOM_MONO_FONT
 }
+if (process.env.CUSTOM_HEADING_FONT) {
+  fontFamilyConfig.heading = process.env.CUSTOM_HEADING_FONT
+}
 
 const config: Config = {
   content: [
@@ -18,7 +21,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: '#e01e5a'
+        primary: '#e01e5a',
+        title: '#333332',
+        text: '#636362',
+        light: '#ececec'
       },
       fontFamily: fontFamilyConfig
     },

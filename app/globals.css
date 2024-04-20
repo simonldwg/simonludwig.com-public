@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+a {
+  text-decoration: underline;
+}
+
+.-translate-y-150percent {
+  transform: translateY(-150%);
+}
+
+.text-10xl {
+  font-size: 10rem;
+  line-height: 1;
+}

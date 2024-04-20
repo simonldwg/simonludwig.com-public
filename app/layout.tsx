@@ -1,4 +1,6 @@
 import "./globals.css"
+import Navbar from "@/app/components/Navbar"
+import Footer from "@/app/components/Footer"
 
 export const metadata = {
   title: "Simon Ludwig",
@@ -12,16 +14,25 @@ function renderFontCSS() {
   return null
 }
 
-export default function RootLayout({ children, }: {
-  children: React.ReactNode;
+export default function RootLayout({ children, params }: {
+  children: React.ReactNode,
+  params: {
+    colorClass?: string
+  }
 }) {
   return (
     <html lang="en">
     <head>
       {renderFontCSS()}
     </head>
-    <body>
-      {children}
+    <body className="bg-light text-title">
+    <div className="flex flex-col h-screen justify-between">
+      <header>
+        <Navbar />
+      </header>
+      <main className={`mb-auto ${(params.colorClass) ? params.colorClass : 'text-primary'}`}>{children}</main>
+      <Footer />
+    </div>
     </body>
     </html>
   )
