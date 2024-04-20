@@ -20,12 +20,6 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      colors: {
-        primary: '#e01e5a',
-        title: '#333332',
-        text: '#636362',
-        light: '#ececec'
-      },
       fontFamily: fontFamilyConfig
     },
   },

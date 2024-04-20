@@ -14,23 +14,20 @@ function renderFontCSS() {
   return null
 }
 
-export default function RootLayout({ children, params }: {
-  children: React.ReactNode,
-  params: {
-    colorClass?: string
-  }
+export default function RootLayout({ children }: {
+  children: React.ReactNode
 }) {
   return (
     <html lang="en">
     <head>
       {renderFontCSS()}
     </head>
-    <body className="bg-light text-title">
+    <body className="bg-gray-50 text-gray-900">
     <div className="flex flex-col h-screen justify-between">
-      <header>
+      <header className="border-b-gray-200 border-b-2">
         <Navbar />
       </header>
-      <main className={`mb-auto ${(params.colorClass) ? params.colorClass : 'text-primary'}`}>{children}</main>
+      <main className="mb-auto">{children}</main>
       <Footer />
     </div>
     </body>
