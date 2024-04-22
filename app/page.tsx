@@ -74,15 +74,17 @@ const Home = async () => {
           </div>
         </div>
       </div>
-      <div className="bg-red-500 text-gray-50" id="contact">
-        <div className="max-w-screen-2xl mx-auto w-full p-4 pt-20 pb-20 text-center">
-          <Heading1 colorClass="text-gray-50">Contact Me</Heading1>
-          <a className="text-xl inline-block transition-all duration-300 ease-out hover:transform hover:scale-110 mb-2" href="mailto:hello@simonludwig.com">
-            <Mail className="inline mr-2" />hello@simonludwig.com
-          </a><br />
-          <a className="text-xl inline-block transition-all duration-300 ease-out hover:transform hover:scale-110" href="https://www.linkedin.com/in/simonldwg/">
-            <Linkedin className="inline mr-2" />LinkedIn
-          </a>
+      <div className="text-gray-50" id="contact">
+        <div id="contact-container">
+          <div className="max-w-screen-2xl mx-auto w-full p-4 pt-20 pb-20 text-center">
+            <Heading1 colorClass="text-gray-50 inline-block p-2">Contact Me</Heading1><br />
+            <a className="text-xl p-2 inline-block transition-all duration-300 ease-out hover:transform hover:scale-110 mb-2" href="mailto:hello@simonludwig.com">
+              <Mail className="inline mr-2" />hello@simonludwig.com
+            </a><br />
+            <a className="text-xl p-2 inline-block transition-all duration-300 ease-out hover:transform hover:scale-110" href="https://www.linkedin.com/in/simonldwg/">
+              <Linkedin className="inline mr-2" />LinkedIn
+            </a>
+          </div>
         </div>
       </div>
     </>

@@ -28,3 +28,12 @@ a {
 @keyframes cursor{
   50%{border-right-color: transparent;}
 }
+
+#contact {
+  background-image: url("https://static.simonludwig.com/images/bg-contact.jpg");
+  background-position: center;
+}
+
+#contact-container {
+  background: rgba(0, 0, 0, 0.75);
+}
