@@ -2,7 +2,8 @@ import {getAllProjects} from "@/lib/projectManager"
 import ProjectPreview from "@/app/components/ProjectPreview"
 import Heading1 from "@/app/components/typography/Heading1"
 import Heading2 from "@/app/components/typography/Heading2"
-import {Mail} from "react-feather"
+import {Linkedin, Mail} from "react-feather"
+import Link from "next/link"
 
 export const runtime = "edge"
 
@@ -23,12 +24,12 @@ const Home = async () => {
               </a>
             </div>
           </div>
-          <div className="md:min-h-96 lg:aspect-square md:p-4 md:pl-2 float-right order-1 md:order-2">
-            <img src="https://static.simonludwig.com/images/main-lg.jpg" alt="" className="object-cover w-full md:h-full" />
+          <div className="md:min-h-96 md:p-4 md:pl-2 order-1 md:order-2">
+            <img src="https://static.simonludwig.com/images/main-lg.jpg" alt="" className="object-cover w-full md:h-full lg:aspect-square" />
           </div>
         </div>
       </div>
-      <div className="bg-gray-950 text-gray-50">
+      <div className="bg-gradient-to-r from-gray-950 to-gray-900 text-gray-50" id="projects">
         <div className="max-w-screen-2xl mx-auto w-full p-4 pt-10 pb-10">
           <Heading1 colorClass="text-gray-50">Projects</Heading1>
           <p className="mb-10">These are some of the projects I have worked on recently. Some projects were done in a team.</p>
@@ -58,6 +59,30 @@ const Home = async () => {
               }
             </div>
           </div>
+        </div>
+      </div>
+      <div className="max-w-screen-2xl mx-auto w-full p-4 pt-10 pb-10 grid grid-cols-1 md:grid-cols-4" id="about-me">
+        <div className="md:col-span-3 md:pr-5">
+          <Heading1>About Me</Heading1>
+          <p className="mb-4">When I first started programming, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis minima repellat totam? Dolor hic, minima perspiciatis placeat quidem vitae. Ab, enim esse minus nulla obcaecati odio optio quas sapiente temporibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequatur cupiditate est facilis illo, maxime modi nemo perspiciatis voluptatibus? Dolorem dolorum iste laudantium magnam natus odio porro? Fuga, in perferendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda cupiditate est expedita ipsam modi molestias nam perspiciatis ratione, veritatis voluptatum? Distinctio doloremque ea eaque eligendi laudantium nulla quibusdam sunt unde.</p>
+          <p className="mb-4">When I first started programming, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores autem dignissimos esse fugiat illum, itaque iure libero nihil nulla officia quis quisquam repellendus sapiente ut vel veritatis vero voluptas! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis minima repellat totam? Dolor hic, minima perspiciatis placeat quidem vitae. Ab, enim esse minus nulla obcaecati odio optio quas sapiente temporibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequatur cupiditate est facilis illo, maxime modi nemo perspiciatis voluptatibus? Dolorem dolorum iste laudantium magnam natus odio porro? Fuga, in perferendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda cupiditate est expedita ipsam modi molestias nam perspiciatis ratione, veritatis voluptatum? Distinctio doloremque ea eaque eligendi laudantium nulla quibusdam sunt unde.</p>
+          <p>You can find more information about me on my <Link href="https://www.linkedin.com/in/simonldwg/">LinkedIn</Link>.</p>
+        </div>
+        <div>
+          <div className="mt-7 md:mt-0 md:pl-5">
+            <img src="https://static.simonludwig.com/images/main-lg.jpg" alt="" className="object-cover aspect-square w-full h-full rounded-full" />
+          </div>
+        </div>
+      </div>
+      <div className="bg-red-500 text-gray-50" id="contact">
+        <div className="max-w-screen-2xl mx-auto w-full p-4 pt-20 pb-20 text-center">
+          <Heading1 colorClass="text-gray-50">Contact Me</Heading1>
+          <a className="text-xl inline-block transition-all duration-300 ease-out hover:transform hover:scale-110 mb-2" href="mailto:hello@simonludwig.com">
+            <Mail className="inline mr-2" />hello@simonludwig.com
+          </a><br />
+          <a className="text-xl inline-block transition-all duration-300 ease-out hover:transform hover:scale-110" href="https://www.linkedin.com/in/simonldwg/">
+            <Linkedin className="inline mr-2" />LinkedIn
+          </a>
         </div>
       </div>
     </>
