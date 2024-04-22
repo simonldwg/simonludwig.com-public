@@ -9,11 +9,11 @@ export default function Footer() {
         <Link href="#">Imprint</Link>
       </div>
       <div className="mb-3 sm:mb-0">
-        <Link href="https://github.com/simonldwg" className="no-underline hover:text-gray-900 transition-all duration-300 ease-in-out mr-7">
-          <GitHub className="inline w-7"/>
+        <Link href="https://github.com/simonldwg" className="no-underline group mr-7">
+          <GitHub className="inline w-7 transition-all duration-300 ease-in-out group-hover:text-gray-900 group-hover:transform group-hover:scale-110"/>
         </Link>
-        <Link href="https://www.linkedin.com/in/simonldwg/" className="no-underline hover:text-gray-900 transition-all duration-300 ease-in-out">
-          <Linkedin className="inline w-7"/>
+        <Link href="https://www.linkedin.com/in/simonldwg/" className="no-underline group">
+          <Linkedin className="inline w-7 transition-all duration-300 ease-in-out group-hover:text-gray-900 group-hover:transform group-hover:scale-110"/>
         </Link>
       </div>
       <div className="sm:text-right">
