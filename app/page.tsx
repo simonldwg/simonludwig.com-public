@@ -11,15 +11,15 @@ const Home = async () => {
 
   return (
     <>
-      <div className="bg-gradient-to-b from-gray-50 to-blue-50">
+      <div className="bg-gradient-to-b from-gray-50 to-red-50">
         <div className="max-w-screen-2xl mx-auto w-full grid grid-cols-1 md:grid-cols-2">
           <div className="w-full h-full flex p-4 pt-10 pb-10 md:pb-4 md:pt-4 md:pr-2 order-2 md:order-1 items-center">
             <div>
-              <h1 className="font-mono font-bold md:font-black text-pink-600 text-8xl md:text-9xl mb-4">Hi.</h1>
+              <h1 className="font-mono font-bold md:font-black text-red-500 text-8xl mb-7 typewriter inline-block border-r-8">Hi:)</h1>
               <p className="text-xl mb-4">My name is Simon Ludwig. I study Media Informatics at the University of Applied Sciences in Düsseldorf.</p>
               <p className="text-xl mb-6">I am passionate about software engineering methodology, software architecture, security engineering and music software.</p>
               <a className="p-2 font-bold rounded-xl border-2 border-gray-900 hover:bg-gray-900 hover:text-gray-50 no-underline inline-block transition-all duration-200 ease-out" href="mailto:hello@simonludwig.com">
-                <Mail className="inline" />&nbsp;&nbsp;Get in Touch
+                <Mail className="inline" />&nbsp;&nbsp;Get in touch
               </a>
             </div>
           </div>

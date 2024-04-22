@@ -14,3 +14,17 @@ a {
   font-size: 10rem;
   line-height: 1;
 }
+
+.typewriter {
+  border-right-color: rgba(239, 68, 68, .85);
+  overflow: hidden;
+  animation: typewriter 800ms steps(4) 1.5s 1 normal both,
+             cursor 1.2s steps(1) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 2.45em;}
+}
+@keyframes cursor{
+  50%{border-right-color: transparent;}
+}
