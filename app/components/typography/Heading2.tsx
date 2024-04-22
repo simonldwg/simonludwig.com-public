@@ -2,7 +2,7 @@ import {HeadingProps} from "@/app/components/typography/HeadingProps"
 
 export const Heading2: React.FC<HeadingProps> =  ({children, colorClass}) => {
   return (
-    <h2 className={`text-2xl font-bold font-heading mb-4 ${(colorClass) ? colorClass : 'text-pink-600'}`}>{children}</h2>
+    <h2 className={`text-2xl font-bold font-heading mb-4 ${(colorClass) ? colorClass : 'text-red-500'}`}>{children}</h2>
   )
 }
 
