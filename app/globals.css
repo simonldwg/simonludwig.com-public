@@ -23,7 +23,7 @@ a {
 }
 @keyframes typewriter{
   from{width: 0;}
-  to{width: 2.45em;}
+  to{width: 14rem;}
 }
 @keyframes cursor{
   50%{border-right-color: transparent;}
