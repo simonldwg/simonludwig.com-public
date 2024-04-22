@@ -38,7 +38,7 @@ const Home = async () => {
               <Heading2 colorClass="text-gray-50">Work Projects</Heading2>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-8 sm:gap-4 lg:gap-8 mt-8 mb-14">
                 {
-                  projects.filter((project) => project.category === 'Work').map((project) => ProjectPreview(project))
+                  projects.filter((project) => project.category === 'Work').map((project) => <ProjectPreview slug={project.slug} title={project.title} subtitle={project.subtitle} category={project.category} description={project.description} githubURL={project.githubURL} imageSmall={project.imageSmall} imageLarge={project.imageLarge}></ProjectPreview>)
                 }
               </div>
             </div>
@@ -46,7 +46,7 @@ const Home = async () => {
               <Heading2 colorClass="text-gray-50">University Projects</Heading2>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-8 sm:gap-4 lg:gap-8 mt-8 mb-14">
                 {
-                  projects.filter((project) => project.category === 'University').map((project) => ProjectPreview(project))
+                  projects.filter((project) => project.category === 'University').map((project) => <ProjectPreview slug={project.slug} title={project.title} subtitle={project.subtitle} category={project.category} description={project.description} githubURL={project.githubURL} imageSmall={project.imageSmall} imageLarge={project.imageLarge}></ProjectPreview>)
                 }
               </div>
             </div>
@@ -55,7 +55,7 @@ const Home = async () => {
             <Heading2 colorClass="text-gray-50">Personal Projects</Heading2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 sm:gap-4 lg:gap-8 mt-8 mb-14">
               {
-                projects.filter((project) => project.category === 'Personal').map((project) => ProjectPreview(project))
+                projects.filter((project) => project.category === 'Personal').map((project) => <ProjectPreview slug={project.slug} title={project.title} subtitle={project.subtitle} category={project.category} description={project.description} githubURL={project.githubURL} imageSmall={project.imageSmall} imageLarge={project.imageLarge}></ProjectPreview>)
               }
             </div>
           </div>
