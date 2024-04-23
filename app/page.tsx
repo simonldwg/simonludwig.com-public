@@ -2,7 +2,7 @@ import {getAllProjects} from "@/lib/projectManager"
 import ProjectPreview from "@/app/components/ProjectPreview"
 import Heading1 from "@/app/components/typography/Heading1"
 import Heading2 from "@/app/components/typography/Heading2"
-import {Linkedin, Mail} from "react-feather"
+import {Mail} from "react-feather"
 import Link from "next/link"
 
 export const runtime = "edge"
