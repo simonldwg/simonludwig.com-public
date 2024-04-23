@@ -22,6 +22,12 @@ a {
   box-sizing: content-box;
 }
 
+.set-br-margins br {
+  display: block;
+  content: "";
+  margin-top: 1rem;
+}
+
 
 @keyframes typewriter{
   from{width: 0;}
