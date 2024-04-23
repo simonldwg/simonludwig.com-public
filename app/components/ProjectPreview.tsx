@@ -12,7 +12,7 @@ export default function ProjectPreview(project: Project) {
   const projectPreviewVisible = useIsVisible(projectPreviewRef)
 
   return (
-    <div ref={projectPreviewRef} className={`text-gray-900 transition-all transform ease-in duration-600 ${projectPreviewVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}>
+    <div ref={projectPreviewRef} className={`text-gray-900 transition-all transform ease-in duration-500 ${projectPreviewVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"}`}>
       <img src={project.imageSmall} alt={`${project.title} project image`} className="w-full rounded-t-xl"/>
       <div className="p-4 bg-gray-50 rounded-b-xl border-t-gray-300 border-t-2">
         <Heading3 colorClass="text-gray-900">{project.title}</Heading3>
