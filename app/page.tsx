@@ -64,8 +64,8 @@ const Home = async () => {
       <div className="max-w-screen-2xl mx-auto w-full p-4 sm:p-8 pt-10 pb-10 grid grid-cols-1 md:grid-cols-4" id="about-me">
         <div className="md:col-span-3 md:pr-5">
           <Heading1>About Me</Heading1>
-          <p className="mb-4">When I first started programming in 2014, using only a Raspberry Pi and my parent’s TV, I wanted to learn everything there is to know about computers. Now, ten years later, I am a lot more knowledgeable and have mostly finished my bachelor’s degree in Media Informatics, but I can confidently say that I have not achieved my naïve goal and likely never will.</p>
-          <p className="mb-4">During my studies at the University of Applied Sciences in Düsseldorf, I have focused on the topics of software engineering methodology, software architecture and security engineering. This manifested itself in multiple university projects where we worked in a team and used agile methods and approaches to develop software. I also chose software architecture and security engineering as compulsory elective modules and took part in a capture-the-flag hacking workshop to deepen my understanding of IT security. Moreover, I have worked on several projects as a student assistant under Prof. Dr. Holger Schmidt, most notably <Link href="/projects/turtl">TURTL</Link>, an online application for IT security in computer networks. I coordinated the development work and built the Vue.js frontend and Django backend together with four colleagues.</p>
+          <p className="mb-4">When I first started programming in 2014, at the age of thirteen, using only a Raspberry Pi and my parent’s TV, I wanted to learn everything there is to know about computers. Now, ten years later, I am a lot more knowledgeable and getting closer to finishing my bachelor’s degree in Media Informatics, but I can confidently say that I have not achieved my naïve goal and likely never will.</p>
+          <p className="mb-4">During my studies at the University of Applied Sciences in Düsseldorf, I focused on the topics of software engineering methodology, software architecture and security engineering. This manifested itself in multiple university projects where we worked in a team and approached software development in a flexible, agile way. I also chose software architecture and security engineering as compulsory elective modules and took part in a capture-the-flag hacking workshop to deepen my understanding of IT security. Moreover, I have worked on multiple projects as a student assistant under Prof. Dr. Holger Schmidt, most notably <Link href="/projects/turtl">TURTL</Link>, an online application for IT security in computer networks. I built the Vue.js frontend and Django backend together with four colleagues and coordinated our team's work towards the end of the project.</p>
           <p className="mb-4">I am very passionate about music as well. I previously worked as a volunteer in the orchestra management of the WDR, the second-largest public broadcasting corporation in Europe. I play the guitar, the trombone, the trumpet and the piano in local bands and orchestras and I love producing music, which I have done as part of my studies too. I am also curious about music production software and algorithms, but my university does not offer courses in this field for bachelor students and I have therefore not been able to fully devote myself to this subject area yet.</p>
           <p className="mb-4">Aside from music and computer science, I have a great interest in cooking, baking and food in general. I am still looking for ways to integrate my enthusiasm for food into my studies, but to no avail (...yet).</p>
           <p>You can find more information about me on my <Link href="https://www.linkedin.com/in/simonldwg/">LinkedIn</Link>.</p>
@@ -73,19 +73,6 @@ const Home = async () => {
         <div>
           <div className="mt-7 md:mt-0 md:pl-5">
             <img src="https://static.simonludwig.com/images/main-lg.jpg" alt="" className="object-cover aspect-square w-full h-full rounded-full" />
-          </div>
-        </div>
-      </div>
-      <div className="text-gray-50" id="contact">
-        <div id="contact-container">
-          <div className="max-w-screen-2xl mx-auto w-full p-4 sm:p-8 pt-20 pb-20 text-center">
-            <Heading1 colorClass="text-gray-50 inline-block p-2">Contact Me</Heading1><br />
-            <a className="text-xl p-2 inline-block transition-all duration-300 ease-out hover:transform hover:scale-110 mb-2" href="mailto:hello@simonludwig.com">
-              <Mail className="inline mr-2" />hello@simonludwig.com
-            </a><br />
-            <a className="text-xl p-2 inline-block transition-all duration-300 ease-out hover:transform hover:scale-110" href="https://www.linkedin.com/in/simonldwg/">
-              <Linkedin className="inline mr-2" />LinkedIn
-            </a>
           </div>
         </div>
       </div>
