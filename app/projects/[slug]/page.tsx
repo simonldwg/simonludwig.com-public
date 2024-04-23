@@ -31,14 +31,16 @@ export default async function ProjectPage({params}: { params: { slug: string } }
 
   return (
     <div className="max-w-screen-2xl mx-auto w-full pt-4 pb-10">
+      <div className="pr-4 pl-4 sm:pr-8 sm:pl-8">
+        <nav aria-label="Breadcrumb" className="text-gray-500 mb-8">
+          <ul>
+            <li className="inline"><Link href="/#projects" className="hover:text-gray-800 transition-all duration-300 ease-out">Projects</Link>&nbsp;<ChevronRight className="inline" /></li>
+            <li className="inline"><Link href={`/projects/${project.slug}`} className="hover:text-gray-800 transition-all duration-300 ease-out" aria-current="page">{project.title}</Link></li>
+          </ul>
+        </nav>
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-2 order-2 md:order-1">
         <div className="pr-4 pl-4 sm:pr-8 sm:pl-8">
-          <nav aria-label="Breadcrumb" className="text-gray-500 mb-8">
-            <ul>
-              <li className="inline"><Link href="/#projects" className="hover:text-gray-800 transition-all duration-300 ease-out">Projects</Link>&nbsp;<ChevronRight className="inline" /></li>
-              <li className="inline"><Link href={`/projects/${project.slug}`} className="hover:text-gray-800 transition-all duration-300 ease-out" aria-current="page">{project.title}</Link></li>
-            </ul>
-          </nav>
           <Heading1>{project.title}</Heading1>
           <p className="font-mono text-gray-500 mb-4">{project.subtitle}</p>
           <p className="mb-4 set-br-margins" dangerouslySetInnerHTML={{__html: cleanedDescription}}></p>
