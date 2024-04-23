@@ -3,7 +3,7 @@ import {GitHub, Linkedin} from "react-feather"
 
 export default function Footer() {
   return (
-    <footer className="max-w-screen-2xl mx-auto p-4 text-center text-sm text-gray-500 sm:grid sm:grid-cols-3 w-full">
+    <footer className="max-w-screen-2xl mx-auto p-4 sm:pr-8 sm:pl-8 text-center text-sm text-gray-500 sm:grid sm:grid-cols-3 w-full">
       <div className="sm:text-left mb-3 sm:mb-0">
         <Link href="#" className="mr-4">Privacy Policy</Link>
         <Link href="#">Imprint</Link>

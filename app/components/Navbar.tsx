@@ -1,6 +1,6 @@
 "use client"
 
-import React, {useEffect, useState} from "react"
+import React, {useState} from "react"
 import Link from "next/link"
 
 export default function Navbar() {
@@ -11,7 +11,7 @@ export default function Navbar() {
 
   return (
     <nav>
-      <div className="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <div className="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-4 sm:pr-8 sm:pl-8">
         <Link href="/" className="flex items-center space-x-3 no-underline hover:underline">
           <span className="self-center text-3xl text-gray-900 font-bold whitespace-nowrap">Simon Ludwig</span>
         </Link>
