@@ -7,7 +7,7 @@ export default function Footer() {
     <>
       <div className="text-gray-50" id="contact">
         <div id="contact-container">
-          <div className="max-w-screen-2xl mx-auto w-full p-4 sm:p-8 pt-20 pb-20 text-center">
+          <div className="max-w-screen-2xl mx-auto w-full p-4 sm:pr-8 sm:pl-8 pt-20 pb-20 text-center">
             <Heading1 colorClass="text-gray-50 inline-block p-2">Contact Me</Heading1><br />
             <a className="text-xl p-2 inline-block transition-all duration-300 ease-out hover:transform hover:scale-110 mb-2" href="mailto:hello@simonludwig.com">
               <Mail className="inline mr-2" />hello@simonludwig.com
@@ -20,8 +20,8 @@ export default function Footer() {
       </div>
       <footer className="max-w-screen-2xl mx-auto p-4 sm:pr-8 sm:pl-8 text-center text-sm text-gray-500 sm:grid sm:grid-cols-3 w-full">
         <div className="sm:text-left mb-3 sm:mb-0">
-          <Link href="#" className="mr-4">Privacy Policy</Link>
-          <Link href="#">Imprint</Link>
+          <Link href="#" className="mr-4">Privacy Policy (Datenschutz)</Link>
+          <Link href="#">Imprint (Impressum)</Link>
         </div>
         <div className="mb-3 sm:mb-0">
           <Link href="https://github.com/simonldwg" className="no-underline group mr-7">
