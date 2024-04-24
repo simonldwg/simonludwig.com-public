@@ -20,8 +20,8 @@ export default function Footer() {
       </div>
       <footer className="max-w-screen-2xl mx-auto p-4 sm:pr-8 sm:pl-8 text-center text-sm text-gray-500 sm:grid sm:grid-cols-3 w-full">
         <div className="sm:text-left mb-3 sm:mb-0">
-          <Link href="#" className="mr-4">Privacy Policy (Datenschutz)</Link>
-          <Link href="#">Imprint (Impressum)</Link>
+          <Link href="/privacy-policy" className="mr-4">Datenschutzerkl&auml;rung</Link>
+          <Link href="/imprint">Impressum</Link>
         </div>
         <div className="mb-3 sm:mb-0">
           <Link href="https://github.com/simonldwg" className="no-underline group mr-7">
