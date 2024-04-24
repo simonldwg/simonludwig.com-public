@@ -1,3 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+a {
+  text-decoration: underline;
+}
+
+.-translate-y-150percent {
+  transform: translateY(-150%);
+}
+
+.text-10xl {
+  font-size: 10rem;
+  line-height: 1;
+}
+
+.typewriter {
+  border-right-color: rgba(239, 68, 68, .85);
+  animation: typewriter 800ms steps(4) 1.5s 1 normal both,
+             cursor 1.2s steps(1) infinite normal;
+  box-sizing: content-box;
+}
+
+
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 100%;}
+}
+@keyframes cursor{
+  50%{border-right-color: transparent;}
+}
+
+#contact {
+  background-image: url("https://static.simonludwig.com/images/bg-contact.jpg");
+  background-position: center;
+}
+
+#contact-container {
+  background: rgba(0, 0, 0, 0.75);
+}
