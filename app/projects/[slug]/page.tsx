@@ -43,7 +43,7 @@ export default async function ProjectPage({params}: { params: { slug: string } }
         <div className="pr-4 pl-4 sm:pr-8 sm:pl-8">
           <Heading1>{project.title}</Heading1>
           <p className="font-mono text-gray-500 mb-4">{project.subtitle}</p>
-          <p className="mb-4 set-br-margins" dangerouslySetInnerHTML={{__html: cleanedDescription}}></p>
+          <p className="mb-4" dangerouslySetInnerHTML={{__html: cleanedDescription}}></p>
           {renderGithubLink(project)}
           <p className="mb-4 text-gray-500 text-sm">Category: {project.category} project</p>
         </div>
