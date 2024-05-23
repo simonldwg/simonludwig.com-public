@@ -39,3 +39,11 @@ a {
 #contact-container {
   background: rgba(0, 0, 0, 0.75);
 }
+
+.aspect-photo {
+  aspect-ratio: 3 / 2;
+}
+
+.object-35 {
+  object-position: left 35%;
+}
